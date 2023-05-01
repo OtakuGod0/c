@@ -1,11 +1,16 @@
 #include <stdio.h>
+#define row 2
+#define col 3
+int main(){
+    int i, j;
+    int a[row][col] = { {1, 2, 3}, {4, 5, 6} };
 
-int main()
-{
-    int i, j, row = 2, col = 2;
-    int A[row][col] = {(1, 2), (3, 4)};
-    int B[row][col] = {(5, 6), (7, 8)};
-    int T[col][row];
+    for(i = 0; i < col; i++){
+        for(j = 0; j < row; j++){
+            printf("%d \t", a[j][i]);
+        }
+        printf("\n");
+    }
 
     return 0;
 }
